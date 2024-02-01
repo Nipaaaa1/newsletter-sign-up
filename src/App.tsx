@@ -34,7 +34,7 @@ const App = () => {
     setEmail("");
   };
   return (
-    <main className="shadow-4xl grid h-svh place-items-center bg-darkSlateGrey shadow-black">
+    <main className="shadow-4xl grid h-svh place-items-center bg-charcoalGrey shadow-black">
       {!message ? (
         <section className="flex w-auto flex-col bg-white md:flex-row md:rounded-2xl md:p-5">
           <img
@@ -42,7 +42,7 @@ const App = () => {
             src={mobileIllustration}
             alt="Mobile Illustration"
           />
-          <section className="font-roboto flex w-full flex-col gap-5 px-5 pb-6 pt-10 antialiased md:pr-10">
+          <section className="flex w-full flex-col gap-5 px-5 pb-6 pt-10 font-roboto antialiased md:pr-10">
             <h1 className="text-[2.5rem] font-bold text-darkSlateGrey md:text-[3.5rem]">
               Stay updated!
             </h1>
@@ -100,7 +100,7 @@ const App = () => {
                 type="text"
               />
               <button
-                className="font-roboto hover:from-pink mt-7 w-full rounded-lg bg-darkSlateGrey py-5 text-sm font-bold text-white transition ease-in-out hover:bg-gradient-to-r hover:to-tomato hover:shadow-xl hover:shadow-tomato/50"
+                className="mt-7 w-full rounded-lg bg-darkSlateGrey py-5 font-roboto text-sm font-bold text-white transition ease-in-out hover:bg-gradient-to-r hover:from-pink hover:to-tomato hover:shadow-xl hover:shadow-tomato/50"
                 type="submit"
               >
                 Subscribe to monthly newsletter
@@ -114,7 +114,7 @@ const App = () => {
           />
         </section>
       ) : (
-        <section className="font-roboto flex h-svh flex-col bg-white px-5 py-10 md:h-auto md:w-1/4 md:rounded-2xl">
+        <section className="flex h-svh flex-col bg-white px-5 py-10 font-roboto md:h-auto md:w-1/4 md:rounded-2xl">
           <section className="flex size-full flex-col justify-center gap-8">
             <img className="h-16 w-max" src={successIcon} alt="success" />
             <h1 className="text-[2.5rem] font-bold leading-none text-darkSlateGrey">
@@ -129,7 +129,7 @@ const App = () => {
           </section>
           <button
             onClick={handleClick}
-            className="font-roboto hover:from-pink mt-7 w-full rounded-lg bg-darkSlateGrey py-5 text-sm font-bold text-white transition ease-in-out hover:bg-gradient-to-r hover:to-tomato hover:shadow-xl hover:shadow-tomato/50"
+            className="mt-7 w-full rounded-lg bg-darkSlateGrey py-5 font-roboto text-sm font-bold text-white transition ease-in-out hover:bg-gradient-to-r hover:from-pink hover:to-tomato hover:shadow-xl hover:shadow-tomato/50"
           >
             Dismiss message
           </button>
