@@ -1,4 +1,5 @@
 import mobileIllustration from "/images/illustration-sign-up-mobile.svg";
+import desktopIllustration from "/images/illustration-sign-up-desktop.svg";
 
 import { clsx } from "clsx";
 
@@ -33,19 +34,19 @@ const App = () => {
     setEmail("");
   };
   return (
-    <main>
+    <main className="shadow-4xl grid h-svh place-items-center bg-darkSlateGrey shadow-black">
       {!message ? (
-        <>
+        <section className="flex w-auto flex-col bg-white md:flex-row md:rounded-2xl md:p-5">
           <img
-            className="h-max w-full"
+            className="h-max w-full md:hidden"
             src={mobileIllustration}
             alt="Mobile Illustration"
           />
-          <section className="font-roboto flex flex-col gap-5 px-5 pb-6 pt-10 antialiased">
+          <section className="font-roboto flex w-full flex-col gap-5 px-5 pb-6 pt-10 antialiased md:pr-10">
             <h1 className="text-[2.5rem] font-bold text-darkSlateGrey">
               Stay updated!
             </h1>
-            <p className="text-charcoalGrey">
+            <p className="text-charcoalGrey md:w-[85%]">
               Join 60,000+ product managers receiving monthly updates on:
             </p>
             <ul className="space-y-3 text-charcoalGrey">
@@ -106,9 +107,14 @@ const App = () => {
               </button>
             </form>
           </section>
-        </>
+          <img
+            className="hidden md:block"
+            src={desktopIllustration}
+            alt="Desktop Illustration"
+          />
+        </section>
       ) : (
-        <section className="font-roboto flex h-svh flex-col px-5 py-10">
+        <section className="font-roboto flex h-svh flex-col bg-white px-5 py-10 md:h-auto md:w-1/4 md:rounded-2xl">
           <section className="flex size-full flex-col justify-center gap-8">
             <img className="h-16 w-max" src={successIcon} alt="success" />
             <h1 className="text-[2.5rem] font-bold leading-none text-darkSlateGrey">
