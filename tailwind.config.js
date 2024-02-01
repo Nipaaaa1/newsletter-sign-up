@@ -8,6 +8,7 @@ export default {
         darkSlateGrey: "hsl(234, 29%, 20%)",
         charcoalGrey: "hsl(235, 18%, 26%)",
         grey: "hsl(231, 7%, 60%)",
+        pink: "hsl(347, 100%, 66%)",
       },
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],

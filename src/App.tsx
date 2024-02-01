@@ -43,7 +43,7 @@ const App = () => {
             alt="Mobile Illustration"
           />
           <section className="font-roboto flex w-full flex-col gap-5 px-5 pb-6 pt-10 antialiased md:pr-10">
-            <h1 className="text-[2.5rem] font-bold text-darkSlateGrey">
+            <h1 className="text-[2.5rem] font-bold text-darkSlateGrey md:text-[3.5rem]">
               Stay updated!
             </h1>
             <p className="text-charcoalGrey md:w-[85%]">
@@ -100,7 +100,7 @@ const App = () => {
                 type="text"
               />
               <button
-                className="font-roboto mt-7 w-full rounded-lg bg-darkSlateGrey py-5 text-sm font-bold text-white"
+                className="font-roboto hover:from-pink mt-7 w-full rounded-lg bg-darkSlateGrey py-5 text-sm font-bold text-white transition ease-in-out hover:bg-gradient-to-r hover:to-tomato hover:shadow-xl hover:shadow-tomato/50"
                 type="submit"
               >
                 Subscribe to monthly newsletter
@@ -129,7 +129,7 @@ const App = () => {
           </section>
           <button
             onClick={handleClick}
-            className="font-roboto mt-7 w-full rounded-lg bg-darkSlateGrey py-5 text-sm font-bold text-white"
+            className="font-roboto hover:from-pink mt-7 w-full rounded-lg bg-darkSlateGrey py-5 text-sm font-bold text-white transition ease-in-out hover:bg-gradient-to-r hover:to-tomato hover:shadow-xl hover:shadow-tomato/50"
           >
             Dismiss message
           </button>
